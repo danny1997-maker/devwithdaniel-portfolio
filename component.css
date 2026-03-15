@@ -1,0 +1,97 @@
+.btn {
+  display: inline-block;
+  font-size: var(--size-ui);
+  font-family: var(--family-ui);
+  font-weight: var(--weight-ui);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-ui);
+  padding: var(--space-3) var(--space-4);
+  text-align: center;
+  border-radius: var(--radius-0);
+  min-width: 7.5rem;
+  min-height: 2.75rem;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: var(--primary-base);
+  color: var(--white);
+  border: 1px solid var(--primary-base);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--primary-shade);
+  color: var(--white);
+  border: 1px solid var(--primary-shade);
+  transform: scale(1.02);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: var(--secondary-base);
+  color: var(--white);
+  border: 1px solid var(--secondary-base);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: var(--secondary-shade);
+  color: var(--white);
+  border: 1px solid var(--secondary-shade);
+  transform: scale(1.02);
+}
+
+.btn-primary-outline:link,
+.btn-primary-outline:visited {
+  background-color: var(--white);
+  color: var(--primary-base);
+  border: 1px solid var(--primary-base);
+}
+
+.btn-primary-outline:hover,
+.btn-primary-outline:active {
+  background-color: var(--white);
+  color: var(--primary-shade);
+  border: 1px solid var(--primary-shade);
+  transform: scale(1.02);
+}
+
+.btn-secondary-outline:link,
+.btn-secondary-outline:visited {
+  background-color: var(--white);
+  color: var(--secondary-base);
+  border: 1px solid var(--secondary-base);
+}
+
+.btn-secondary-outline:hover,
+.btn-secondary-outline:active {
+  background-color: var(--white);
+  color: var(--secondary-shade);
+  border: 1px solid var(--secondary-shade);
+  transform: scale(1.02);
+}
+
+.highlight {
+  font-family: var(--family-ui);
+  font-weight: var(--weight-headings);
+  letter-spacing: var(--ls-ui);
+  line-height: var(--lh-ui);
+  padding: var(--space-1) var(--space-1);
+  border-radius: var(--space-2);
+}
+
+.highlight-primary-shade {
+  background-color: var(--primary-shade);
+  color: var(--white);
+  border: 1px solid var(--primary-shade);
+}
+
+.highlight-secondary-base {
+  color: var(--primary-base);
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ----------------- COLORS -----------------  */
+
+  /* PRIMARY COLORS */
+
+  --primary-tint: #74c0fc;
+  --primary-base: #1c7ed6;
+  --primary-shade: #1864ab;
+
+  /* SECONDARY COLORS */
+
+  --secondary-tint: #63e6be;
+  --secondary-base: #0ca678;
+  --secondary-shade: #087f5b;
+
+  /* SHADES OF GRAY */
+
+  --gray-tint: #dee2e6;
+  --gray-base: #495057;
+  --gray-shade: #212529;
+
+  /* NEUTRAL COLORS */
+
+  --white: #ffffff;
+  --black: #000000;
+
+  /* ----------------- FONT SIZES -----------------  */
+
+  --size-h1: 2.5rem;
+  --size-h2: 2rem;
+  --size-h3: 1.75rem;
+  --size-h4: 1.55rem;
+  --size-h5: 1.25rem;
+  --size-h6: 1.125rem;
+  --size-p: 1rem;
+  --size-small: 0.75rem;
+  --size-ui: 0.85rem;
+
+  /* ----------------- SPACING SYSTEM -----------------  */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1.125rem;
+  --space-5: 1.687rem;
+  --space-6: 2.531rem;
+  --space-7: 3.796rem;
+
+  /* ----------------- LETTER SPACING -----------------  */
+
+  --ls-headings: 0.01em;
+  --ls-paragraph: 0.02em;
+  --ls-ui: 0.01em;
+
+  /* ----------------- LINE HEIGHT -----------------  */
+  --lh-ui: 1.2;
+  --lh-paragraph: 1.5;
+
+  /* ----------------- NAV HEIGHT -----------------  */
+
+  --nav-height: 80px;
+
+  /* ----------------- FONT FAMILY -----------------  */
+
+  --family-ui: "Poppins", sans-serif;
+  --family-paragraph: "Open Sans", sans-serif;
+
+  /* ----------------- FONT WEIGHT -----------------  */
+
+  --weight-headings: 700;
+  --weight-paragraph: 400;
+  --weight-ui: 500;
+
+  /* ----------------- BORDER RADIUS -----------------  */
+  --radius-0: 6px;
+  --radius-1: 8px;
+  --radius-2: 12px;
+  --radius-3: 50px;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--size-p);
+  letter-spacing: var(--ls-paragraph);
+  line-height: var(--lh-paragraph);
+  color: inherit;
+  font-weight: var(--weight-paragraph);
+  font-family: var(--family-paragraph);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--family-ui);
+  font-weight: var(--weight-headings);
+  letter-spacing: var(--ls-headings);
+  line-height: var(--lh-ui);
+  color: var(--gray-shade);
+}
+
+h1 {
+  font-size: var(--size-h1);
+}
+
+h2 {
+  font-size: var(--size-h2);
+}
+
+h3 {
+  font-size: var(--size-h3);
+}
+
+h4 {
+  font-size: var(--size-h4);
+}
+
+h5 {
+  font-size: var(--size-h6);
+}
+
+h6 {
+  font-size: var(--size-h6);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  font-size: var(--size-ui);
+  font-family: var(--family-ui);
+  font-weight: var(--weight-ui);
+  letter-spacing: var(--ls-ui);
+  line-height: var(--lh-ui);
+  text-decoration: none;
+  color: var(--gray-base);
+}
+
+.main-container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: var(--space-6);
+}
